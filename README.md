@@ -1,11 +1,11 @@
 
 ## **ZoomEye API**
 
-[![Python 2.x|3.x](https://img.shields.io/badge/python-2.x|3.x-yellow.svg)](https://www.python.org/) [![License](https://img.shields.io/badge/license-GPLv2-red.svg)](https://github.com/ZoomEye/SDK/blob/master/LICENSE) 
+[![Python 2.x|3.x](https://img.shields.io/badge/python-2.x|3.x-yellow.svg)](https://www.python.org/) [![License](https://img.shields.io/badge/license-GPLv2-red.svg)](https://github.com/knownsec/ZoomEye.git/blob/master/LICENSE) 
 
 [**ZoomEye**](https://www.zoomeye.org/) is a search engine for cyberspace that lets the user find specific network components(ip, services, etc.).
 
-[**ZoomEye API**](https://www.zoomeye.org/api/doc) is a web service that provides convenient access to [**ZoomEye**](https://www.zoomeye.org/) features, data, information over HTTPS. The platform API empowers developers to automate, extend and connected with [**ZoomEye**](https://www.zoomeye.org/). You can use the [**ZoomEye**](https://www.zoomeye.org/) platform API to programmatically create apps, provision some add-ons and perform some automate tasks. Just imagine that what you could do amazing stuff with [**ZoomEye**](https://www.zoomeye.org/).
+[**ZoomEye API**](https://www.zoomeye.org/doc) is a web service that provides convenient access to [**ZoomEye**](https://www.zoomeye.org/) features, data, information over HTTPS. The platform API empowers developers to automate, extend and connected with [**ZoomEye**](https://www.zoomeye.org/). You can use the [**ZoomEye**](https://www.zoomeye.org/) platform API to programmatically create apps, provision some add-ons and perform some automate tasks. Just imagine that what you could do amazing stuff with [**ZoomEye**](https://www.zoomeye.org/).
 
 
 ### **How to install ZoomEye SDK**
@@ -17,7 +17,7 @@ $ sudo easy_install zoomeye-SDK
 or
 
 ```
-$ sudo pip install git+https://github.com/ZoomEye/SDK.git
+$ sudo pip install git+https://github.com/knownsec/ZoomEye.git
 ```
 
 ### **How to use ZoomEye SDK**
@@ -87,17 +87,17 @@ curl -XPOST https://api.zoomeye.org/user/login -d
 
 **2. ZoomEye Dorks**
 
-When everything goes ok, you can try to search [**ZoomEye Dorks**](https://www.zoomeye.org/search/dorks) with **ZoomEye API Token**.
+When everything goes ok, you can try to search [**ZoomEye Dorks**](https://www.zoomeye.org/component) with **ZoomEye API Token**.
 
 ```
 curl -X GET https://api.zoomeye.org/host/search?query="port:21"&page=1&facet=app,os \
 -H "Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5..."
 ```
 
-If you want more, please access [ZoomEye API References](https://www.zoomeye.org/api/doc).
+If you want more, please access [ZoomEye API References](https://www.zoomeye.org/doc).
 
 
 **Links**
 
 https://www.zoomeye.org/  
-https://www.zoomeye.org/api/doc
+https://www.zoomeye.org/doc
